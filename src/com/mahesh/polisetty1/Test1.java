@@ -8,7 +8,7 @@ public class Test1 {
 		
 		System.out.println("Third time updatin the project");
 		System.out.print("Mahesh3");
-		Sysyem.out.println("Mahesh4");
+		System.out.println("Mahesh4");
 	}
 
 }
