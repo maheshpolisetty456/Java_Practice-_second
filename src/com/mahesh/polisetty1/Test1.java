@@ -7,8 +7,11 @@ public class Test1 {
 		System.out.println("check-in the changes");
 		
 		System.out.println("Third time updatin the project");
+<<<<<<< mahesh_feature
 		System.out.print("Mahesh3");
 		
+=======
+>>>>>>> main
 
 	}
 
