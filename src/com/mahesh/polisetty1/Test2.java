@@ -57,11 +57,12 @@ public class Test2 {
 		
 		//count the frequency of each elements
 		
-		List<String> list = Arrays.asList("Apple","Banana","Kiwi","Apple","Apple");
+	/*	List<String> list = Arrays.asList("Apple","Banana","Kiwi","Apple","Apple");
 		
 		Map<String, Long> map = list.stream().collect(Collectors.groupingBy(c->c,Collectors.counting()));
 		
-		System.out.println(map);
+		System.out.println(map); */
+		//after dinner will start the code
 		
 		
 		
