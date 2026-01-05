@@ -1,13 +1,17 @@
 package com.mahesh.polisetty1;
 
 import java.security.SecureRandom;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
+
+import javax.print.attribute.standard.Compression;
 
 public class Test2 {
 
@@ -64,6 +68,82 @@ public class Test2 {
 		System.out.println(map); */
 		//after dinner will start the code
 		//Login again
+		
+		//sort a list of String  by length
+		
+//		List<String> list = Arrays.asList("Apple","Kiwiuuu","Banana","Orange");
+//		
+//		List<String> result = list.stream().sorted(Comparator.comparing(String::length)).collect(Collectors.toList());
+//		System.out.println(result);
+		
+		//find the maximum and minimum
+		
+		
+//		List<Integer> list = Arrays.asList(5,4,6,3,2,8,1,9);
+		
+//		int a = list.stream().min(Integer::compare).get();
+//		int b =list.stream().max(Integer::compare).get();
+//		System.out.println(a);
+//		System.out.println(b);
+		
+		//Filter  and print  names  starting M
+		
+//		List<String> list  =  Arrays.asList("Apple","Kiwi","Mango","Mosambi","Banana");
+//		
+//		List<String> result =list.stream().filter(f->f.startsWith("M")).toList();
+//		
+//		System.out.println(result);
+		
+//		List<String> list1 = new ArrayList<String>(Arrays.asList("Apple","Banana","Manago"));
+//		
+//		List<String> list2 = Arrays.asList("Kiwi","Banana","Berry");
+//		
+//		list1.retainAll(list2);
+//		
+//		System.out.println(list1);
+		
+		//find the word  with maximuam lenght  in the  sentendce
+		
+//		String str = "java is a programming language";
+//		
+//		
+//		String result =Arrays.stream(str.split(" ")).max(Comparator.comparing(String::length)).get();
+//		
+//		System.out.println(result);
+//		
+		//Reverse  word in a sentence
+		
+//		String str = "java is a programming language";
+		
+//		String[] arrStr = str.split(" ");
+//		String output ="";
+//		
+//		for(int i = arrStr.length-1;i>=0;i--) {
+//			output =output+arrStr[i]+ " ";
+//		}
+//		
+//		System.out.println(output.trim());
+		
+//		 String result =Arrays.stream(str.split(" ")).map(f->new StringBuilder(f).reverse().toString()).collect(Collectors.joining(" "));
+//		 
+//		 System.out.println(result);
+		
+		//convert list of string to upper case
+		
+//		String result = Arrays.stream(str.split(" ")).map(String::toUpperCase).collect(Collectors.joining(" "));
+//		System.out.println(result);
+		//Remove the duplciate elements from  the String
+		
+		String str = "java is a programming language and java is a powerfull";
+		
+//		String result = Arrays.stream(str.split(" ")).distinct().collect(Collectors.joining(" "));
+//		System.out.println(result);
+		
+		//find the frequency of each character (ignore white spaces)
+		
+		Map<Character, Long> result = str.replace(" ", "").chars().mapToObj(v->(char)v).collect(Collectors.groupingBy(c->c,Collectors.counting()));
+		System.out.println(result);
+		
 		
 		
 		
