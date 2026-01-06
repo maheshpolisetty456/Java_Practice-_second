@@ -145,6 +145,35 @@ public class Test2 {
 		System.out.println(result);
 		
 		
+		//count the number of vowels, consonents , digits and special characters
+		
+		String str  = "java is a prgramming language 2026 %^&*(";
+		int vowels = 0;
+		int consonents =0;
+		int digits =0;
+		int special =0;
+		
+		String replace = str.replace(" ", "");
+		
+		for( char c : replace.toCharArray()) {
+			if(Character.isLetter(c)) {
+				if("AEIOUaeiou".indexOf(c)!= -1) {
+					vowels++;
+				}else {
+					consonents++;
+				}
+			}else if(Character.isDigit(c)) {
+				digits++;
+			}else {
+				special++;
+			}
+		}
+		System.out.println("Vowels: "+vowels);
+		System.out.println("Consonents: "+consonents);
+		System.out.println("Digits: "+digits);
+		System.out.println("=Special character: "+special);
+
+		
 		
 		
 		
