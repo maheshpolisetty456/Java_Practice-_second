@@ -1,5 +1,6 @@
 package com.mahesh.polisetty1;
 
+import java.security.SecureRandom;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
@@ -56,13 +57,36 @@ public class Test3 {
 		
 		//move the negative numbers to the front
 		
-		List<Integer> list = Arrays.asList(2,4,5,-4,3,-3,-2,4);
+//		List<Integer> list = Arrays.asList(2,4,5,-4,3,-3,-2,4);
+//		
+//		List<Integer> result = Stream.concat(list.stream().filter(f1->f1<0), list.stream().filter(f2->f2>0)).toList();
+//		System.out.println(result);
+
+		//move to the zero's to last 
 		
-		List<Integer> result = Stream.concat(list.stream().filter(f1->f1<0), list.stream().filter(f2->f2>0)).toList();
+//		List<Integer> list = Arrays.asList(2,5,8,8,9,0,8,0,9,9,0,4);
+//		
+//		List<Integer> result = Stream.concat(list.stream().filter(f1->f1>0), list.stream().filter(f3->f3==0)).toList();
+//		
+//		System.out.println(result);
+		
+		//find the unique work in the list and sortd alphabets
+		
+//		String str = "Java is a programing language and Java is powerfull";
+//		
+//	String result =	Arrays.stream(str.split(" ")).map(String::toLowerCase).distinct().collect(Collectors.joining(" "));
+//		System.out.println(result);
+//		
+		
+		//otp generation using java 8
+		
+		int number = 6;
+		
+		SecureRandom rand = new SecureRandom();
+		
+		String result = rand.ints(number,0,10).mapToObj(f->String.valueOf(f)).collect(Collectors.joining());
+		
 		System.out.println(result);
-		//return from the washroom
-		System.out.println("Mahesh");
-		
 		
 		
 		
