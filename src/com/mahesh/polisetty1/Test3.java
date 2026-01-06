@@ -60,6 +60,8 @@ public class Test3 {
 		
 		List<Integer> result = Stream.concat(list.stream().filter(f1->f1<0), list.stream().filter(f2->f2>0)).toList();
 		System.out.println(result);
+		//return from the washroom
+		System.out.println("Mahesh");
 		
 		
 		
